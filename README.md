@@ -1,2 +1,2 @@
 # Projeto Chat
- Esse projetinho foi feito o flet.
+ Esse projetinho foi feito com flet.
