@@ -53,4 +53,4 @@ def main(pagina):
     pagina.add(texto)
     pagina.add(botao_iniciar)
     
-ft.app(target=main, view= ft.WEB_BROWSER) # 3 passo: Rodar o aplicativo
+ft.app(target=main, view= ft.WEB_BROWSER)
