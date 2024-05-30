@@ -1,21 +1,6 @@
-# Título
-# Botão
-    # Clicou no botão aparece um pop up
-    # popup ou modal
-        # Titulo : benvindo ao jefchat
-        # Escreva seu nome:
-        # Botão: Entrar no chat
-# Chat
-# Embaixo do chat:
-    # Campo digite sua mensagem
-    # Botão enviar
+import flet as ft 
 
-# Vai usar o Flet - é um frameWork do python
-
-
-
-import flet as ft # 1 passo: Importar o flet
-def main(pagina): # 2 passo: Criar uma função
+def main(pagina): 
     texto = ft.Text("Chat do Jeff")b
     def enviar_mensagem_tunel(mensagem):
         # Adcionar mensagem no site
@@ -48,7 +33,6 @@ def main(pagina): # 2 passo: Criar uma função
 
         pagina.update()
 
-
     titulo_popup = ft.Text("Chat não rastreável")
     nome_do_usuario = ft.TextField(label="Escreva seu nome no chat:")
     botao_entrar_no_chat = ft.ElevatedButton("Entrar no chat", on_click=entrar_no_chat)
@@ -68,8 +52,5 @@ def main(pagina): # 2 passo: Criar uma função
 
     pagina.add(texto)
     pagina.add(botao_iniciar)
-
-
-
-
+    
 ft.app(target=main, view= ft.WEB_BROWSER) # 3 passo: Rodar o aplicativo
